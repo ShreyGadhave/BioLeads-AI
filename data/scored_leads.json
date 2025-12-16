@@ -1,0 +1,969 @@
+[
+  {
+    "id": 1,
+    "name": "Dr. Sarah Chen",
+    "title": "Director of Toxicology",
+    "company": "Vertex Pharmaceuticals",
+    "company_type": "Large Pharma",
+    "location": "Cambridge, MA",
+    "hq_location": "Boston, MA",
+    "email": "s.chen@vertexpharm.com",
+    "linkedin": "linkedin.com/in/sarahchen-tox",
+    "funding_status": "Public",
+    "recent_publication": "Drug-Induced Liver Injury: A 3D Hepatic Spheroid Approach (2024)",
+    "publication_keywords": [
+      "DILI",
+      "hepatic spheroids",
+      "3D culture"
+    ],
+    "uses_invitro": true,
+    "conference_attendance": [
+      "SOT 2024",
+      "AACR 2023"
+    ],
+    "scores": {
+      "scientific_intent": 40,
+      "role_fit": 30,
+      "company_intent": 15,
+      "technographic": 15,
+      "location": 10
+    },
+    "probability_score": 100,
+    "score_breakdown": {
+      "scientific_intent": 40,
+      "role_fit": 30,
+      "company_intent": 15,
+      "technographic": 15,
+      "location": 10,
+      "total": 100
+    },
+    "rank": 1
+  },
+  {
+    "id": 2,
+    "name": "Dr. Michael Torres",
+    "title": "Head of Preclinical Safety",
+    "company": "Foghorn Therapeutics",
+    "company_type": "Series C Biotech",
+    "location": "Cambridge, MA",
+    "hq_location": "Cambridge, MA",
+    "email": "mtorres@foghorntx.com",
+    "linkedin": "linkedin.com/in/michaeltorres",
+    "funding_status": "Series C ($200M)",
+    "recent_publication": "Novel In Vitro Models for Hepatotoxicity Screening (2023)",
+    "publication_keywords": [
+      "hepatotoxicity",
+      "in vitro",
+      "screening"
+    ],
+    "uses_invitro": true,
+    "conference_attendance": [
+      "SOT 2024"
+    ],
+    "scores": {
+      "scientific_intent": 40,
+      "role_fit": 30,
+      "company_intent": 20,
+      "technographic": 15,
+      "location": 10
+    },
+    "probability_score": 100,
+    "score_breakdown": {
+      "scientific_intent": 40,
+      "role_fit": 30,
+      "company_intent": 18,
+      "technographic": 15,
+      "location": 10,
+      "total": 100
+    },
+    "rank": 2
+  },
+  {
+    "id": 4,
+    "name": "Dr. James Liu",
+    "title": "Senior Scientist, Hepatic Biology",
+    "company": "Takeda",
+    "company_type": "Large Pharma",
+    "location": "San Diego, CA",
+    "hq_location": "Cambridge, MA",
+    "email": "james.liu@takeda.com",
+    "linkedin": "linkedin.com/in/jamesliu-hepatic",
+    "funding_status": "Public",
+    "recent_publication": "3D Liver Organoids for DILI Prediction (2024)",
+    "publication_keywords": [
+      "3D organoids",
+      "DILI",
+      "liver"
+    ],
+    "uses_invitro": true,
+    "conference_attendance": [
+      "AACR 2024"
+    ],
+    "scores": {
+      "scientific_intent": 40,
+      "role_fit": 30,
+      "company_intent": 15,
+      "technographic": 15,
+      "location": 10
+    },
+    "probability_score": 100,
+    "score_breakdown": {
+      "scientific_intent": 40,
+      "role_fit": 25,
+      "company_intent": 15,
+      "technographic": 15,
+      "location": 10,
+      "total": 100
+    },
+    "rank": 3
+  },
+  {
+    "id": 5,
+    "name": "Dr. Anna Kowalski",
+    "title": "Director of Safety Assessment",
+    "company": "Arcus Biosciences",
+    "company_type": "Series B Biotech",
+    "location": "Hayward, CA",
+    "hq_location": "Hayward, CA",
+    "email": "akowalski@arcusbio.com",
+    "linkedin": "linkedin.com/in/annakowalski",
+    "funding_status": "Series B ($150M)",
+    "recent_publication": "Microphysiological Systems in Drug-Induced Cardiotoxicity (2023)",
+    "publication_keywords": [
+      "MPS",
+      "cardiotoxicity"
+    ],
+    "uses_invitro": true,
+    "conference_attendance": [
+      "SOT 2023"
+    ],
+    "scores": {
+      "scientific_intent": 20,
+      "role_fit": 30,
+      "company_intent": 20,
+      "technographic": 15,
+      "location": 10
+    },
+    "probability_score": 100,
+    "score_breakdown": {
+      "scientific_intent": 40,
+      "role_fit": 30,
+      "company_intent": 20,
+      "technographic": 15,
+      "location": 0,
+      "total": 100
+    },
+    "rank": 4
+  },
+  {
+    "id": 6,
+    "name": "Dr. Robert Schmidt",
+    "title": "Head of Investigative Toxicology",
+    "company": "Novartis",
+    "company_type": "Large Pharma",
+    "location": "Basel, Switzerland",
+    "hq_location": "Basel, Switzerland",
+    "email": "robert.schmidt@novartis.com",
+    "linkedin": "linkedin.com/in/robertschmidt-tox",
+    "funding_status": "Public",
+    "recent_publication": "Advancing NAMs for Regulatory Toxicology (2024)",
+    "publication_keywords": [
+      "NAMs",
+      "regulatory",
+      "toxicology"
+    ],
+    "uses_invitro": true,
+    "conference_attendance": [
+      "SOT 2024",
+      "EUROTOX 2023"
+    ],
+    "scores": {
+      "scientific_intent": 40,
+      "role_fit": 30,
+      "company_intent": 15,
+      "technographic": 15,
+      "location": 10
+    },
+    "probability_score": 100,
+    "score_breakdown": {
+      "scientific_intent": 40,
+      "role_fit": 30,
+      "company_intent": 15,
+      "technographic": 15,
+      "location": 10,
+      "total": 100
+    },
+    "rank": 5
+  },
+  {
+    "id": 8,
+    "name": "Dr. David Park",
+    "title": "Associate Director, Hepatic Safety",
+    "company": "Genentech",
+    "company_type": "Large Pharma",
+    "location": "South San Francisco, CA",
+    "hq_location": "South San Francisco, CA",
+    "email": "parkd@gene.com",
+    "linkedin": "linkedin.com/in/davidpark-hepatic",
+    "funding_status": "Public (Roche)",
+    "recent_publication": "Human iPSC-Derived Hepatocytes for DILI Studies (2024)",
+    "publication_keywords": [
+      "iPSC",
+      "hepatocytes",
+      "DILI"
+    ],
+    "uses_invitro": true,
+    "conference_attendance": [
+      "SOT 2024",
+      "ISSCR 2023"
+    ],
+    "scores": {
+      "scientific_intent": 40,
+      "role_fit": 30,
+      "company_intent": 15,
+      "technographic": 15,
+      "location": 10
+    },
+    "probability_score": 100,
+    "score_breakdown": {
+      "scientific_intent": 40,
+      "role_fit": 30,
+      "company_intent": 15,
+      "technographic": 15,
+      "location": 10,
+      "total": 100
+    },
+    "rank": 6
+  },
+  {
+    "id": 9,
+    "name": "Dr. Catherine Moore",
+    "title": "Senior Director, Preclinical",
+    "company": "Beam Therapeutics",
+    "company_type": "Series B Biotech",
+    "location": "Cambridge, MA",
+    "hq_location": "Cambridge, MA",
+    "email": "cmoore@beamtx.com",
+    "linkedin": "linkedin.com/in/catherinemoore-preclinical",
+    "funding_status": "Series B ($180M)",
+    "recent_publication": "Base Editing Safety: Lessons from 3D Models (2023)",
+    "publication_keywords": [
+      "base editing",
+      "safety",
+      "3D models"
+    ],
+    "uses_invitro": true,
+    "conference_attendance": [
+      "ASGCT 2024"
+    ],
+    "scores": {
+      "scientific_intent": 35,
+      "role_fit": 25,
+      "company_intent": 20,
+      "technographic": 15,
+      "location": 10
+    },
+    "probability_score": 100,
+    "score_breakdown": {
+      "scientific_intent": 40,
+      "role_fit": 30,
+      "company_intent": 20,
+      "technographic": 15,
+      "location": 10,
+      "total": 100
+    },
+    "rank": 7
+  },
+  {
+    "id": 11,
+    "name": "Dr. Jennifer Adams",
+    "title": "VP of Toxicology",
+    "company": "Sarepta Therapeutics",
+    "company_type": "Public Biotech",
+    "location": "Cambridge, MA",
+    "hq_location": "Cambridge, MA",
+    "email": "jadams@sarepta.com",
+    "linkedin": "linkedin.com/in/jenniferadams-tox",
+    "funding_status": "Public",
+    "recent_publication": "Gene Therapy Safety Assessment Using Organoids (2023)",
+    "publication_keywords": [
+      "gene therapy",
+      "safety",
+      "organoids"
+    ],
+    "uses_invitro": true,
+    "conference_attendance": [
+      "ASGCT 2024",
+      "SOT 2023"
+    ],
+    "scores": {
+      "scientific_intent": 35,
+      "role_fit": 30,
+      "company_intent": 15,
+      "technographic": 15,
+      "location": 10
+    },
+    "probability_score": 100,
+    "score_breakdown": {
+      "scientific_intent": 40,
+      "role_fit": 30,
+      "company_intent": 15,
+      "technographic": 15,
+      "location": 10,
+      "total": 100
+    },
+    "rank": 8
+  },
+  {
+    "id": 13,
+    "name": "Dr. Lisa Zhang",
+    "title": "Director of Drug Metabolism",
+    "company": "Alnylam Pharmaceuticals",
+    "company_type": "Public Biotech",
+    "location": "Cambridge, MA",
+    "hq_location": "Cambridge, MA",
+    "email": "lzhang@alnylam.com",
+    "linkedin": "linkedin.com/in/lisazhang-metabolism",
+    "funding_status": "Public",
+    "recent_publication": "siRNA Hepatotoxicity: 3D Culture Insights (2024)",
+    "publication_keywords": [
+      "siRNA",
+      "hepatotoxicity",
+      "3D culture"
+    ],
+    "uses_invitro": true,
+    "conference_attendance": [
+      "OTS 2024",
+      "SOT 2024"
+    ],
+    "scores": {
+      "scientific_intent": 40,
+      "role_fit": 25,
+      "company_intent": 15,
+      "technographic": 15,
+      "location": 10
+    },
+    "probability_score": 100,
+    "score_breakdown": {
+      "scientific_intent": 40,
+      "role_fit": 20,
+      "company_intent": 15,
+      "technographic": 15,
+      "location": 10,
+      "total": 100
+    },
+    "rank": 9
+  },
+  {
+    "id": 15,
+    "name": "Dr. Sophie Martin",
+    "title": "Head of Safety Pharmacology",
+    "company": "GSK",
+    "company_type": "Large Pharma",
+    "location": "Stevenage, UK",
+    "hq_location": "London, UK",
+    "email": "sophie.martin@gsk.com",
+    "linkedin": "linkedin.com/in/sophiemartin-safety",
+    "funding_status": "Public",
+    "recent_publication": "NAMs Integration in Early Drug Development (2024)",
+    "publication_keywords": [
+      "NAMs",
+      "drug development",
+      "safety"
+    ],
+    "uses_invitro": true,
+    "conference_attendance": [
+      "SOT 2024",
+      "EUROTOX 2024"
+    ],
+    "scores": {
+      "scientific_intent": 40,
+      "role_fit": 30,
+      "company_intent": 15,
+      "technographic": 15,
+      "location": 10
+    },
+    "probability_score": 100,
+    "score_breakdown": {
+      "scientific_intent": 40,
+      "role_fit": 30,
+      "company_intent": 15,
+      "technographic": 15,
+      "location": 10,
+      "total": 100
+    },
+    "rank": 10
+  },
+  {
+    "id": 18,
+    "name": "Dr. Chris Kim",
+    "title": "Director of NAMs Development",
+    "company": "AstraZeneca",
+    "company_type": "Large Pharma",
+    "location": "Gaithersburg, MD",
+    "hq_location": "Cambridge, UK",
+    "email": "chris.kim@astrazeneca.com",
+    "linkedin": "linkedin.com/in/chriskim-nams",
+    "funding_status": "Public",
+    "recent_publication": "New Approach Methodologies in Respiratory Toxicology (2024)",
+    "publication_keywords": [
+      "NAMs",
+      "respiratory",
+      "toxicology"
+    ],
+    "uses_invitro": true,
+    "conference_attendance": [
+      "SOT 2024",
+      "RTC 2024"
+    ],
+    "scores": {
+      "scientific_intent": 35,
+      "role_fit": 30,
+      "company_intent": 15,
+      "technographic": 15,
+      "location": 0
+    },
+    "probability_score": 100,
+    "score_breakdown": {
+      "scientific_intent": 40,
+      "role_fit": 20,
+      "company_intent": 15,
+      "technographic": 15,
+      "location": 10,
+      "total": 100
+    },
+    "rank": 11
+  },
+  {
+    "id": 20,
+    "name": "Dr. Brian Taylor",
+    "title": "VP of Preclinical Development",
+    "company": "Blueprint Medicines",
+    "company_type": "Public Biotech",
+    "location": "Cambridge, MA",
+    "hq_location": "Cambridge, MA",
+    "email": "btaylor@blueprintmedicines.com",
+    "linkedin": "linkedin.com/in/briantaylor-preclinical",
+    "funding_status": "Public",
+    "recent_publication": "Kinase Inhibitor Hepatotoxicity Assessment (2024)",
+    "publication_keywords": [
+      "kinase inhibitor",
+      "hepatotoxicity"
+    ],
+    "uses_invitro": true,
+    "conference_attendance": [
+      "AACR 2024",
+      "SOT 2024"
+    ],
+    "scores": {
+      "scientific_intent": 40,
+      "role_fit": 30,
+      "company_intent": 15,
+      "technographic": 15,
+      "location": 10
+    },
+    "probability_score": 100,
+    "score_breakdown": {
+      "scientific_intent": 40,
+      "role_fit": 30,
+      "company_intent": 15,
+      "technographic": 15,
+      "location": 10,
+      "total": 100
+    },
+    "rank": 12
+  },
+  {
+    "id": 21,
+    "name": "Dr. Nicole Harris",
+    "title": "Head of Liver Biology",
+    "company": "Aligos Therapeutics",
+    "company_type": "Series B Biotech",
+    "location": "South San Francisco, CA",
+    "hq_location": "South San Francisco, CA",
+    "email": "nharris@aligos.com",
+    "linkedin": "linkedin.com/in/nicoleharris-liver",
+    "funding_status": "Series B ($225M)",
+    "recent_publication": "Primary Human Hepatocyte 3D Cultures for HBV Research (2024)",
+    "publication_keywords": [
+      "hepatocyte",
+      "3D",
+      "HBV"
+    ],
+    "uses_invitro": true,
+    "conference_attendance": [
+      "AASLD 2024",
+      "HBV Forum 2024"
+    ],
+    "scores": {
+      "scientific_intent": 40,
+      "role_fit": 30,
+      "company_intent": 20,
+      "technographic": 15,
+      "location": 10
+    },
+    "probability_score": 100,
+    "score_breakdown": {
+      "scientific_intent": 40,
+      "role_fit": 30,
+      "company_intent": 20,
+      "technographic": 15,
+      "location": 10,
+      "total": 100
+    },
+    "rank": 13
+  },
+  {
+    "id": 22,
+    "name": "Dr. Steven Wright",
+    "title": "Director of Toxicological Sciences",
+    "company": "Eli Lilly",
+    "company_type": "Large Pharma",
+    "location": "Indianapolis, IN",
+    "hq_location": "Indianapolis, IN",
+    "email": "wright_steven@lilly.com",
+    "linkedin": "linkedin.com/in/stevenwright-toxsci",
+    "funding_status": "Public",
+    "recent_publication": "AI-Driven DILI Prediction Using 3D Models (2024)",
+    "publication_keywords": [
+      "AI",
+      "DILI",
+      "3D models",
+      "prediction"
+    ],
+    "uses_invitro": true,
+    "conference_attendance": [
+      "SOT 2024",
+      "SLAS 2024"
+    ],
+    "scores": {
+      "scientific_intent": 40,
+      "role_fit": 30,
+      "company_intent": 15,
+      "technographic": 15,
+      "location": 0
+    },
+    "probability_score": 90,
+    "score_breakdown": {
+      "scientific_intent": 40,
+      "role_fit": 20,
+      "company_intent": 15,
+      "technographic": 15,
+      "location": 0,
+      "total": 90
+    },
+    "rank": 14
+  },
+  {
+    "id": 25,
+    "name": "Dr. Rachel Green",
+    "title": "Associate Director, Hepatotoxicity",
+    "company": "Regeneron",
+    "company_type": "Large Pharma",
+    "location": "Tarrytown, NY",
+    "hq_location": "Tarrytown, NY",
+    "email": "rachel.green@regeneron.com",
+    "linkedin": "linkedin.com/in/rachelgreen-hepatotox",
+    "funding_status": "Public",
+    "recent_publication": "Liver Organoids for Antibody Drug Safety (2024)",
+    "publication_keywords": [
+      "liver organoids",
+      "antibody",
+      "safety"
+    ],
+    "uses_invitro": true,
+    "conference_attendance": [
+      "PEGS 2024",
+      "SOT 2024"
+    ],
+    "scores": {
+      "scientific_intent": 40,
+      "role_fit": 30,
+      "company_intent": 15,
+      "technographic": 15,
+      "location": 0
+    },
+    "probability_score": 90,
+    "score_breakdown": {
+      "scientific_intent": 40,
+      "role_fit": 20,
+      "company_intent": 15,
+      "technographic": 15,
+      "location": 0,
+      "total": 90
+    },
+    "rank": 15
+  },
+  {
+    "id": 10,
+    "name": "Dr. Thomas Brown",
+    "title": "Director of In Vitro Pharmacology",
+    "company": "AbbVie",
+    "company_type": "Large Pharma",
+    "location": "North Chicago, IL",
+    "hq_location": "North Chicago, IL",
+    "email": "thomas.brown@abbvie.com",
+    "linkedin": "linkedin.com/in/thomasbrown-invitro",
+    "funding_status": "Public",
+    "recent_publication": "High-Throughput 3D Liver Models for Drug Discovery (2024)",
+    "publication_keywords": [
+      "high-throughput",
+      "3D liver",
+      "drug discovery"
+    ],
+    "uses_invitro": true,
+    "conference_attendance": [
+      "SOT 2024",
+      "SLAS 2024"
+    ],
+    "scores": {
+      "scientific_intent": 40,
+      "role_fit": 30,
+      "company_intent": 15,
+      "technographic": 15,
+      "location": 0
+    },
+    "probability_score": 80,
+    "score_breakdown": {
+      "scientific_intent": 20,
+      "role_fit": 30,
+      "company_intent": 15,
+      "technographic": 15,
+      "location": 0,
+      "total": 80
+    },
+    "rank": 16
+  },
+  {
+    "id": 24,
+    "name": "Dr. Andrew Clark",
+    "title": "Head of Drug Safety",
+    "company": "Incyte",
+    "company_type": "Public Biotech",
+    "location": "Wilmington, DE",
+    "hq_location": "Wilmington, DE",
+    "email": "aclark@incyte.com",
+    "linkedin": "linkedin.com/in/andrewclark-drugsafety",
+    "funding_status": "Public",
+    "recent_publication": "Hepatocyte-Based Assays for JAK Inhibitor Safety (2024)",
+    "publication_keywords": [
+      "hepatocyte",
+      "JAK inhibitor",
+      "safety"
+    ],
+    "uses_invitro": true,
+    "conference_attendance": [
+      "SOT 2024"
+    ],
+    "scores": {
+      "scientific_intent": 40,
+      "role_fit": 30,
+      "company_intent": 15,
+      "technographic": 15,
+      "location": 0
+    },
+    "probability_score": 80,
+    "score_breakdown": {
+      "scientific_intent": 20,
+      "role_fit": 30,
+      "company_intent": 15,
+      "technographic": 15,
+      "location": 0,
+      "total": 80
+    },
+    "rank": 17
+  },
+  {
+    "id": 14,
+    "name": "Dr. Richard Evans",
+    "title": "Senior Toxicologist",
+    "company": "Merck",
+    "company_type": "Large Pharma",
+    "location": "West Point, PA",
+    "hq_location": "Rahway, NJ",
+    "email": "richard.evans@merck.com",
+    "linkedin": "linkedin.com/in/richardevans-tox",
+    "funding_status": "Public",
+    "recent_publication": "Comparative Analysis of 2D vs 3D Hepatic Models (2024)",
+    "publication_keywords": [
+      "2D",
+      "3D",
+      "hepatic",
+      "comparative"
+    ],
+    "uses_invitro": true,
+    "conference_attendance": [
+      "SOT 2024"
+    ],
+    "scores": {
+      "scientific_intent": 40,
+      "role_fit": 30,
+      "company_intent": 15,
+      "technographic": 15,
+      "location": 0
+    },
+    "probability_score": 75,
+    "score_breakdown": {
+      "scientific_intent": 20,
+      "role_fit": 25,
+      "company_intent": 15,
+      "technographic": 15,
+      "location": 0,
+      "total": 75
+    },
+    "rank": 18
+  },
+  {
+    "id": 17,
+    "name": "Dr. Amanda Foster",
+    "title": "Principal Investigator",
+    "company": "Harvard Medical School",
+    "company_type": "Academic",
+    "location": "Boston, MA",
+    "hq_location": "Boston, MA",
+    "email": "afoster@hms.harvard.edu",
+    "linkedin": "linkedin.com/in/amandafoster-pi",
+    "funding_status": "NIH R01 Grant",
+    "recent_publication": "Organ-on-Chip for DILI Mechanistic Studies (2024)",
+    "publication_keywords": [
+      "organ-on-chip",
+      "DILI",
+      "mechanistic"
+    ],
+    "uses_invitro": true,
+    "conference_attendance": [
+      "SOT 2024",
+      "TERMIS 2024"
+    ],
+    "scores": {
+      "scientific_intent": 40,
+      "role_fit": 25,
+      "company_intent": 10,
+      "technographic": 15,
+      "location": 10
+    },
+    "probability_score": 75,
+    "score_breakdown": {
+      "scientific_intent": 40,
+      "role_fit": 0,
+      "company_intent": 10,
+      "technographic": 15,
+      "location": 10,
+      "total": 75
+    },
+    "rank": 19
+  },
+  {
+    "id": 12,
+    "name": "Dr. Marcus Johnson",
+    "title": "Head of DMPK",
+    "company": "Relay Therapeutics",
+    "company_type": "Series C Biotech",
+    "location": "Cambridge, MA",
+    "hq_location": "Cambridge, MA",
+    "email": "mjohnson@relaytx.com",
+    "linkedin": "linkedin.com/in/marcusjohnson-dmpk",
+    "funding_status": "Series C ($400M)",
+    "recent_publication": null,
+    "publication_keywords": [],
+    "uses_invitro": true,
+    "conference_attendance": [
+      "ISSX 2024"
+    ],
+    "scores": {
+      "scientific_intent": 0,
+      "role_fit": 20,
+      "company_intent": 20,
+      "technographic": 15,
+      "location": 10
+    },
+    "probability_score": 73,
+    "score_breakdown": {
+      "scientific_intent": 0,
+      "role_fit": 30,
+      "company_intent": 18,
+      "technographic": 15,
+      "location": 10,
+      "total": 73
+    },
+    "rank": 20
+  },
+  {
+    "id": 3,
+    "name": "Dr. Emma Williams",
+    "title": "VP of Drug Safety",
+    "company": "Moderna",
+    "company_type": "Large Pharma",
+    "location": "Boston, MA",
+    "hq_location": "Cambridge, MA",
+    "email": "ewilliams@modernatx.com",
+    "linkedin": "linkedin.com/in/emmawilliams-safety",
+    "funding_status": "Public",
+    "recent_publication": null,
+    "publication_keywords": [],
+    "uses_invitro": true,
+    "conference_attendance": [
+      "SOT 2024",
+      "ISSX 2023"
+    ],
+    "scores": {
+      "scientific_intent": 0,
+      "role_fit": 30,
+      "company_intent": 15,
+      "technographic": 15,
+      "location": 10
+    },
+    "probability_score": 70,
+    "score_breakdown": {
+      "scientific_intent": 0,
+      "role_fit": 30,
+      "company_intent": 15,
+      "technographic": 15,
+      "location": 10,
+      "total": 70
+    },
+    "rank": 21
+  },
+  {
+    "id": 19,
+    "name": "Dr. Maria Gonzalez",
+    "title": "Senior Research Scientist",
+    "company": "Pfizer",
+    "company_type": "Large Pharma",
+    "location": "Groton, CT",
+    "hq_location": "New York, NY",
+    "email": "maria.gonzalez@pfizer.com",
+    "linkedin": "linkedin.com/in/mariagonzalez-research",
+    "funding_status": "Public",
+    "recent_publication": "3D Hepatospheres for Drug-Drug Interaction Studies (2023)",
+    "publication_keywords": [
+      "hepatospheres",
+      "DDI",
+      "3D"
+    ],
+    "uses_invitro": true,
+    "conference_attendance": [
+      "ISSX 2024"
+    ],
+    "scores": {
+      "scientific_intent": 40,
+      "role_fit": 25,
+      "company_intent": 15,
+      "technographic": 15,
+      "location": 0
+    },
+    "probability_score": 60,
+    "score_breakdown": {
+      "scientific_intent": 20,
+      "role_fit": 10,
+      "company_intent": 15,
+      "technographic": 15,
+      "location": 0,
+      "total": 60
+    },
+    "rank": 22
+  },
+  {
+    "id": 7,
+    "name": "Dr. Priya Patel",
+    "title": "Principal Scientist, ADMET",
+    "company": "Recursion Pharmaceuticals",
+    "company_type": "Series D Biotech",
+    "location": "Salt Lake City, UT",
+    "hq_location": "Salt Lake City, UT",
+    "email": "ppatel@recursion.com",
+    "linkedin": "linkedin.com/in/priyapatel-admet",
+    "funding_status": "Series D ($450M)",
+    "recent_publication": null,
+    "publication_keywords": [],
+    "uses_invitro": true,
+    "conference_attendance": [
+      "SLAS 2024"
+    ],
+    "scores": {
+      "scientific_intent": 0,
+      "role_fit": 20,
+      "company_intent": 20,
+      "technographic": 15,
+      "location": 0
+    },
+    "probability_score": 58,
+    "score_breakdown": {
+      "scientific_intent": 0,
+      "role_fit": 25,
+      "company_intent": 18,
+      "technographic": 15,
+      "location": 0,
+      "total": 58
+    },
+    "rank": 23
+  },
+  {
+    "id": 23,
+    "name": "Dr. Laura Sanchez",
+    "title": "Staff Scientist, ADME-Tox",
+    "company": "Gilead Sciences",
+    "company_type": "Large Pharma",
+    "location": "Foster City, CA",
+    "hq_location": "Foster City, CA",
+    "email": "laura.sanchez@gilead.com",
+    "linkedin": "linkedin.com/in/laurasanchez-admetox",
+    "funding_status": "Public",
+    "recent_publication": null,
+    "publication_keywords": [],
+    "uses_invitro": true,
+    "conference_attendance": [
+      "ISSX 2023"
+    ],
+    "scores": {
+      "scientific_intent": 0,
+      "role_fit": 25,
+      "company_intent": 15,
+      "technographic": 15,
+      "location": 10
+    },
+    "probability_score": 55,
+    "score_breakdown": {
+      "scientific_intent": 0,
+      "role_fit": 25,
+      "company_intent": 15,
+      "technographic": 15,
+      "location": 0,
+      "total": 55
+    },
+    "rank": 24
+  },
+  {
+    "id": 16,
+    "name": "Dr. Kevin O'Brien",
+    "title": "Associate Scientist",
+    "company": "Startup XYZ",
+    "company_type": "Seed Stage",
+    "location": "Austin, TX",
+    "hq_location": "Austin, TX",
+    "email": "kevin@startupxyz.com",
+    "linkedin": "linkedin.com/in/kevinobrien",
+    "funding_status": "Seed ($2M)",
+    "recent_publication": null,
+    "publication_keywords": [],
+    "uses_invitro": false,
+    "conference_attendance": [],
+    "scores": {
+      "scientific_intent": 0,
+      "role_fit": 10,
+      "company_intent": 5,
+      "technographic": 0,
+      "location": 0
+    },
+    "probability_score": 15,
+    "score_breakdown": {
+      "scientific_intent": 0,
+      "role_fit": 10,
+      "company_intent": 5,
+      "technographic": 0,
+      "location": 0,
+      "total": 15
+    },
+    "rank": 25
+  }
+]
