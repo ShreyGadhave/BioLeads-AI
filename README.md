@@ -14,56 +14,144 @@
 
 ---
 
-## 📸 Screenshots
+## � Overview
 
-### Main Dashboard
-<img src="assets/dashboard.png" alt="BioLeads AI Dashboard" width="100%"/>
-
-*Premium glassmorphism UI with real-time metrics and lead scoring*
-
-### Score Distribution & Analytics
-<img src="assets/charts.png" alt="Score Distribution Charts" width="100%"/>
-
-*Interactive Plotly charts showing score distribution and tier breakdown*
-
-### Live Data Fetching
-<img src="assets/live_data.png" alt="Live PubMed and NIH Data" width="100%"/>
-
-*Real-time data from PubMed and NIH RePORTER APIs (free!)*
-
-### Company Analysis
-<img src="assets/analysis.png" alt="Analysis Dashboard" width="100%"/>
-
-*Company type and location analytics for strategic targeting*
+**BioLeads AI** is an **AI-powered lead qualification tool** designed specifically for the biotech industry. It helps Business Development (BD) teams identify high-potential leads who are likely to need **3D in-vitro models for drug toxicology studies**.
 
 ---
 
-## 🎯 What It Does
+## 🎯 The Problem It Solves
 
-BioLeads AI is a web agent that crawls multiple data sources to **identify, enrich, and rank leads** who are most likely to need 3D in-vitro models for drug toxicology studies.
+Biotech BD teams waste hours manually searching across multiple platforms:
+- 🔍 LinkedIn for toxicology directors
+- 📚 PubMed for DILI (Drug-Induced Liver Injury) researchers
+- 💰 Crunchbase for funded startups
+- 🎤 Conference sites for attendees
 
-### The Problem
+**BioLeads AI automates this entire process!**
 
-The biotech BD team wastes hours manually searching:
-- LinkedIn for toxicology directors
-- PubMed for DILI researchers  
-- Crunchbase for funded startups
-- Conference sites for attendees
+---
 
-### The Solution
+## �📸 Screenshots
 
-BioLeads AI automates this with a **3-stage pipeline**:
+### 🔴 Live Data Mode - Real-time PubMed & NIH Data
+<img src="assets/dashboard_live.png" alt="BioLeads AI Live Dashboard" width="100%"/>
+
+*Real-time data fetching from PubMed and NIH RePORTER APIs - completely FREE!*
+
+---
+
+### 📊 Sample Data Mode - Curated Demo Leads
+<img src="assets/dashboard_sample.png" alt="BioLeads AI Sample Dashboard" width="100%"/>
+
+*Premium glassmorphism UI with 25 curated demo leads and scoring model visualization*
+
+---
+
+### 📈 Score Distribution & Tier Breakdown
+<img src="assets/score_distribution.png" alt="Score Distribution Charts" width="100%"/>
+
+*Interactive Plotly charts showing probability score distribution and lead tier breakdown (Hot, High, Medium, Low)*
+
+---
+
+### 🏢 Company Analysis
+<img src="assets/analysis.png" alt="Analysis Dashboard" width="100%"/>
+
+*Average score by company type - identifying Series B biotechs as highest-value targets*
+
+---
+
+## ⚙️ How It Works - 3-Stage Pipeline
+
+BioLeads AI uses a sophisticated **3-stage pipeline** to identify, enrich, and rank leads:
 
 ```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│  IDENTIFICATION │ → │   ENRICHMENT    │ → │    RANKING      │
-│                 │    │                 │    │                 │
-│  • PubMed       │    │  • Location     │    │  • 5-signal     │
-│  • NIH Grants   │    │  • Company HQ   │    │    scoring      │
-│  • Conferences  │    │  • Funding      │    │  • 0-100 score  │
-│  • Funding News │    │  • Tech stack   │    │  • Priority     │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│                           🧬 BIOLEADS AI PIPELINE                                       │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+
+     ┌──────────────────────┐        ┌──────────────────────┐        ┌──────────────────────┐
+     │                      │        │                      │        │                      │
+     │   📥 IDENTIFICATION  │        │   🔬 ENRICHMENT      │        │   📊 RANKING         │
+     │                      │        │                      │        │                      │
+     │  ┌────────────────┐  │        │  ┌────────────────┐  │        │  ┌────────────────┐  │
+     │  │   PubMed API   │  │        │  │   Location     │  │        │  │  5-Signal      │  │
+     │  │   ───────────  │  │        │  │   ─────────    │  │        │  │  Scoring       │  │
+     │  │  DILI Papers   │  │   ──►  │  │  Hub cities    │  │   ──►  │  │  ─────────     │  │
+     │  │  Hepatotoxicity│  │        │  │  (Boston, etc) │  │        │  │  0-100 score   │  │
+     │  └────────────────┘  │        │  └────────────────┘  │        │  └────────────────┘  │
+     │                      │        │                      │        │                      │
+     │  ┌────────────────┐  │        │  ┌────────────────┐  │        │  ┌────────────────┐  │
+     │  │  NIH RePORTER  │  │        │  │  Company Info  │  │        │  │  Tier Labels   │  │
+     │  │  ─────────────  │  │        │  │  ────────────  │  │        │  │  ───────────   │  │
+     │  │  Active Grants │  │        │  │  HQ Location   │  │        │  │  🔥 Hot (80+)  │  │
+     │  │  Liver Tox     │  │        │  │  Company Type  │  │        │  │  ⚡ High (60+) │  │
+     │  └────────────────┘  │        │  └────────────────┘  │        │  │  📊 Medium     │  │
+     │                      │        │                      │        │  │  ❄️ Low (<40)  │  │
+     │  ┌────────────────┐  │        │  ┌────────────────┐  │        │  └────────────────┘  │
+     │  │  Conferences   │  │        │  │   Funding      │  │        │                      │
+     │  │  ─────────────  │  │        │  │  ─────────    │  │        │  ┌────────────────┐  │
+     │  │  SOT, AACR     │  │        │  │  Series A/B/C │  │        │  │   Priority     │  │
+     │  │  Speakers      │  │        │  │  NIH Grants   │  │        │  │   Ranking      │  │
+     │  └────────────────┘  │        │  └────────────────┘  │        │  │  ───────────   │  │
+     │                      │        │                      │        │  │  1, 2, 3...    │  │
+     │  ┌────────────────┐  │        │  ┌────────────────┐  │        │  └────────────────┘  │
+     │  │  Funding News  │  │        │  │  Tech Stack   │  │        │                      │
+     │  │  ─────────────  │  │        │  │  ───────────  │  │        │                      │
+     │  │  Series A/B    │  │        │  │  In-vitro     │  │        │                      │
+     │  │  Announcements │  │        │  │  models used? │  │        │                      │
+     │  └────────────────┘  │        │  └────────────────┘  │        │                      │
+     │                      │        │                      │        │                      │
+     └──────────────────────┘        └──────────────────────┘        └──────────────────────┘
+              │                              │                               │
+              │                              │                               │
+              ▼                              ▼                               ▼
+     ┌──────────────────────────────────────────────────────────────────────────────────────┐
+     │                                                                                      │
+     │                         📊 STREAMLIT DASHBOARD OUTPUT                                │
+     │                                                                                      │
+     │   ┌─────────────┐    ┌─────────────┐    ┌─────────────┐    ┌─────────────┐          │
+     │   │   28        │    │    9        │    │    66       │    │    2        │          │
+     │   │   TOTAL     │    │   HOT       │    │   AVG       │    │   DATA      │          │
+     │   │   LEADS     │    │   LEADS �  │    │   SCORE     │    │   SOURCES   │          │
+     │   └─────────────┘    └─────────────┘    └─────────────┘    └─────────────┘          │
+     │                                                                                      │
+     │   ┌────────────────────────────────────────────────────────────────────────────┐    │
+     │   │  Lead Table  │  Score Distribution  │  Analysis                            │    │
+     │   │  ──────────────────────────────────────────────────────────────────────    │    │
+     │   │  Rank │ Tier     │ Score │ Name        │ Title           │ Company        │    │
+     │   │  1    │ 🔥 Hot   │ 100%  │ Dr. Torres  │ Head of Preclin │ Foghorn Ther.  │    │
+     │   │  2    │ 🔥 Hot   │ 115%  │ Dr. Harris  │ Head of Liver   │ Aligos Ther.   │    │
+     │   └────────────────────────────────────────────────────────────────────────────┘    │
+     │                                                                                      │
+     │   📥 Download CSV    🔄 Refresh                                                      │
+     │                                                                                      │
+     └──────────────────────────────────────────────────────────────────────────────────────┘
 ```
+
+---
+
+## 📊 5-Dimensional Scoring Model
+
+Each lead is scored on **5 signals** out of 100 points:
+
+| Signal | Weight | What It Measures |
+|--------|--------|------------------|
+| **🔬 Scientific Intent** | +40 | Published DILI/hepatic paper in last 2 years |
+| **👔 Role Fit** | +30 | Title: Director, VP, Head of Toxicology/Safety |
+| **💰 Company Intent** | +20 | Series A/B funding (budget available) |
+| **🧪 Technographic** | +15 | Already uses in-vitro models or NAMs |
+| **📍 Location** | +10 | Hub city: Boston, Basel, Bay Area, UK |
+
+### Score Examples
+
+| Lead Profile | Score | Tier |
+|--------------|-------|------|
+| 👤 Junior Scientist at unfunded startup | **15/100** | ❄️ Low |
+| 👤 Research Author with DILI paper | **55/100** | 📊 Medium |
+| 👤 Director of Toxicology at Series A biotech | **70/100** | ⚡ High |
+| 👤 Director of Safety at Series B biotech in Cambridge with DILI paper | **95/100** | 🔥 Hot |
 
 ---
 
@@ -74,20 +162,6 @@ BioLeads AI automates this with a **3-stage pipeline**:
 - **NIH RePORTER** - Active grant principal investigators
 - **Conferences** - SOT, AACR speaker/attendee lists
 - **Funding News** - Series A/B biotech announcements
-
-### 📊 5-Dimensional Scoring Model
-
-| Signal | Weight | What It Measures |
-|--------|--------|------------------|
-| **Scientific Intent** | +40 | Published DILI/hepatic paper in last 2 years |
-| **Role Fit** | +30 | Title: Director, VP, Head of Toxicology/Safety |
-| **Company Intent** | +20 | Series A/B funding (budget available) |
-| **Technographic** | +15 | Already uses in-vitro models or NAMs |
-| **Location** | +10 | Hub city: Boston, Basel, Bay Area, UK |
-
-**Score Examples:**
-- 👤 Junior Scientist at unfunded startup → **15/100** ❄️
-- 👤 Director of Safety at Series B biotech in Cambridge with DILI paper → **95/100** 🔥
 
 ### 🎨 Premium UI
 - Dark mode with glassmorphism design
@@ -200,13 +274,28 @@ bioleads-ai/
 │       └── probability_engine.py
 │
 ├── 📂 data/
-│   └── sample_leads.json    # 25 demo leads
+│   ├── sample_leads.json    # 25 demo leads
+│   └── scored_leads.json    # Pipeline output
 │
 ├── 📂 assets/               # Screenshots
+│   ├── dashboard_live.png
+│   ├── dashboard_sample.png
+│   ├── score_distribution.png
+│   └── analysis.png
 │
 └── 📂 .streamlit/
     └── config.toml          # Dark theme config
 ```
+
+---
+
+## 🔄 Running Modes
+
+| Mode | Command | Description |
+|------|---------|-------------|
+| **Dashboard** | `python -m streamlit run streamlit_app.py` | Interactive web UI with live data |
+| **CLI Pipeline** | `python main.py` | Batch processing, saves to `scored_leads.json` |
+| **Test Mode** | `python main.py --test-run` | Uses sample data only |
 
 ---
 
