@@ -12,6 +12,7 @@ import plotly.graph_objects as go
 import json
 import os
 import sys
+import io
 from pathlib import Path
 from datetime import datetime
 
@@ -409,6 +410,146 @@ def get_score_tier(score):
         return "❄️ Cold"
 
 
+def generate_excel_export(df):
+    """Generate formatted Excel file for export."""
+    from openpyxl import Workbook
+    from openpyxl.styles import Font, Alignment, PatternFill, Border, Side
+    from openpyxl.utils.dataframe import dataframe_to_rows
+    
+    # Prepare export dataframe with proper columns
+    export_cols = ["rank", "probability_score", "name", "title", "company", "location", "hq_location", "funding_status", "recent_publication", "source"]
+    available_cols = [col for col in export_cols if col in df.columns]
+    export_df = df[available_cols].copy()
+    
+    # Add Tier column
+    if "probability_score" in export_df.columns:
+        export_df.insert(1, "tier", export_df["probability_score"].apply(get_score_tier))
+    
+    # Rename columns to proper display names
+    column_names = {
+        "rank": "Rank",
+        "tier": "Tier",
+        "probability_score": "Probability Score",
+        "name": "Name",
+        "title": "Title",
+        "company": "Company",
+        "location": "Location",
+        "hq_location": "HQ Location",
+        "funding_status": "Funding Status",
+        "recent_publication": "Recent Publication",
+        "source": "Data Source"
+    }
+    export_df = export_df.rename(columns=column_names)
+    
+    # Create workbook
+    wb = Workbook()
+    ws = wb.active
+    ws.title = "BioLeads Export"
+    
+    # Define styles
+    header_font = Font(bold=True, color="FFFFFF", size=11)
+    header_fill = PatternFill(start_color="667EEA", end_color="764BA2", fill_type="solid")
+    header_alignment = Alignment(horizontal="center", vertical="center", wrap_text=True)
+    
+    cell_alignment = Alignment(horizontal="left", vertical="center", wrap_text=True)
+    center_alignment = Alignment(horizontal="center", vertical="center")
+    
+    thin_border = Border(
+        left=Side(style='thin', color='E2E8F0'),
+        right=Side(style='thin', color='E2E8F0'),
+        top=Side(style='thin', color='E2E8F0'),
+        bottom=Side(style='thin', color='E2E8F0')
+    )
+    
+    # Tier colors
+    tier_fills = {
+        "🔥 Hot Lead": PatternFill(start_color="F43F5E", end_color="F43F5E", fill_type="solid"),
+        "⭐ High Priority": PatternFill(start_color="F59E0B", end_color="F59E0B", fill_type="solid"),
+        "📊 Medium": PatternFill(start_color="3B82F6", end_color="3B82F6", fill_type="solid"),
+        "📉 Low": PatternFill(start_color="94A3B8", end_color="94A3B8", fill_type="solid"),
+        "❄️ Cold": PatternFill(start_color="CBD5E1", end_color="CBD5E1", fill_type="solid")
+    }
+    
+    # Write headers
+    for col_idx, column in enumerate(export_df.columns, 1):
+        cell = ws.cell(row=1, column=col_idx, value=column)
+        cell.font = header_font
+        cell.fill = header_fill
+        cell.alignment = header_alignment
+        cell.border = thin_border
+    
+    # Write data rows
+    for row_idx, row in enumerate(dataframe_to_rows(export_df, index=False, header=False), 2):
+        for col_idx, value in enumerate(row, 1):
+            cell = ws.cell(row=row_idx, column=col_idx, value=value)
+            cell.border = thin_border
+            
+            # Apply tier coloring
+            col_name = export_df.columns[col_idx - 1]
+            if col_name == "Tier" and value in tier_fills:
+                cell.fill = tier_fills[value]
+                cell.font = Font(bold=True, color="FFFFFF")
+                cell.alignment = center_alignment
+            elif col_name in ["Rank", "Probability Score"]:
+                cell.alignment = center_alignment
+            else:
+                cell.alignment = cell_alignment
+    
+    # Set column widths
+    column_widths = {
+        "Rank": 8,
+        "Tier": 18,
+        "Probability Score": 18,
+        "Name": 25,
+        "Title": 30,
+        "Company": 35,
+        "Location": 25,
+        "HQ Location": 25,
+        "Funding Status": 25,
+        "Recent Publication": 50,
+        "Data Source": 15
+    }
+    
+    for col_idx, column in enumerate(export_df.columns, 1):
+        width = column_widths.get(column, 15)
+        ws.column_dimensions[ws.cell(row=1, column=col_idx).column_letter].width = width
+    
+    # Freeze header row
+    ws.freeze_panes = "A2"
+    
+    # Add summary sheet
+    summary_ws = wb.create_sheet(title="Summary")
+    summary_data = [
+        ["BioLeads AI - Export Summary", ""],
+        ["", ""],
+        ["Total Leads", len(export_df)],
+        ["Hot Leads (80+)", len(export_df[export_df.get("Probability Score", 0) >= 80]) if "Probability Score" in export_df.columns else 0],
+        ["High Priority (60-79)", len(export_df[(export_df.get("Probability Score", 0) >= 60) & (export_df.get("Probability Score", 0) < 80)]) if "Probability Score" in export_df.columns else 0],
+        ["Average Score", round(export_df["Probability Score"].mean(), 1) if "Probability Score" in export_df.columns else 0],
+        ["", ""],
+        ["Export Date", datetime.now().strftime("%Y-%m-%d %H:%M:%S")],
+        ["Generated by", "BioLeads AI - Lead Scoring Agent"]
+    ]
+    
+    for row_idx, row_data in enumerate(summary_data, 1):
+        for col_idx, value in enumerate(row_data, 1):
+            cell = summary_ws.cell(row=row_idx, column=col_idx, value=value)
+            if row_idx == 1:
+                cell.font = Font(bold=True, size=14, color="667EEA")
+            elif col_idx == 1:
+                cell.font = Font(bold=True)
+    
+    summary_ws.column_dimensions['A'].width = 25
+    summary_ws.column_dimensions['B'].width = 30
+    
+    # Save to bytes
+    output = io.BytesIO()
+    wb.save(output)
+    output.seek(0)
+    
+    return output.getvalue()
+
+
 def main():
     # Header
     st.markdown('<h1 class="main-header">🧬 3D In-Vitro Lead Qualification Dashboard</h1>', unsafe_allow_html=True)
@@ -540,8 +681,13 @@ def main():
     with tab1:
         col1, col2, col3 = st.columns([1, 1, 4])
         with col1:
-            csv = filtered_df.to_csv(index=False).encode('utf-8')
-            st.download_button("📥 Download CSV", csv, "bioleads_export.csv", "text/csv")
+            excel_data = generate_excel_export(filtered_df)
+            st.download_button(
+                "📥 Download Excel",
+                excel_data,
+                f"bioleads_export_{datetime.now().strftime('%Y%m%d_%H%M')}.xlsx",
+                "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+            )
         with col2:
             if st.button("🔄 Refresh"):
                 st.cache_data.clear()
